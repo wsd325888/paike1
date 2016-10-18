@@ -111,7 +111,7 @@ public class listActivity extends AppCompatActivity implements View.OnClickListe
 
     private void getpinglunList() {
 
-        RequestParams params = new RequestParams("http://10.0.2.2:8080/webpro4/getpinglun");
+        RequestParams params = new RequestParams("http://10.40.5.24:8080/webpro4/getpinglun");
         x.http().get(params, new Callback.CommonCallback<String>() {
             @Override
             public void onSuccess(String result) {
