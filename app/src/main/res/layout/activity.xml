@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA">
+
+    <ImageView
+        android:id="@+id/iv_photo"
+        android:src="@drawable/amc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"/>
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_marginTop="6dp"
+        android:textColor="#030303"
+        android:layout_toRightOf="@id/iv_photo"
+        android:layout_alignTop="@id/iv_photo"/>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:textSize="20sp"
+        android:textColor="#030303"
+        android:layout_toRightOf="@+id/iv_photo"
+        android:layout_alignBottom="@+id/iv_photo"
+        />
+
+    <ImageView
+        android:id="@+id/iv_zan"
+        android:src="@drawable/pinglun"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/tv_name"
+        android:layout_alignTop="@id/tv_name"
+        android:layout_marginLeft="100dp"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
