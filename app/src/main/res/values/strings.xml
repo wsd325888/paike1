@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">Paipai</string>
+
+    <string name="name1">姓名</string>
+    <string name="username">用户名：</string>
+    <string name="password">密码：</string>
+    <string name="app_name">拍客</string>
+    <string name="app_name1">注册</string>
+    <string name="success">登录成功</string>
+    <string name="bt1">注册</string>
+    <string name="bt2">取消</string>
 </resources>

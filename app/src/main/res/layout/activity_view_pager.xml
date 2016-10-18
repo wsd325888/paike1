@@ -57,6 +57,31 @@
         android:visibility="gone"
         android:background="@android:color/transparent"
         android:text="跳 过"/>
+    <Button
+        android:layout_gravity="bottom|left"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="75dp"
+        android:id="@+id/btn_denglu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0000"
+        android:textSize="35dp"
+        android:visibility="gone"
+        android:background="@android:color/transparent"
+        android:text="登   陆"/>
+    <Button
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="75dp"
+        android:id="@+id/btn_zhuce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0000"
+        android:textSize="35dp"
+        android:visibility="gone"
+        android:background="@android:color/transparent"
+        android:text="注  册"/>
+
 
 </FrameLayout>
 

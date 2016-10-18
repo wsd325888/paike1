@@ -11,14 +11,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity android:name=".MainActivity">
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+
+        </activity>
+        <activity android:name="com.example.acer.framework.Gerenzhuye" />
+        <activity android:name="com.example.acer.framework.Login"/>
+        <activity android:name="com.example.acer.framework.ZhuceActivity"/>
+        <activity android:name="com.example.acer.framework.GetpersonInfo" />
+        <activity android:name="com.example.acer.framework.Sousuoinfo"/>
+        <activity android:name="com.example.acer.framework.vp.ViewPager_test">
+        </activity>
+        <activity android:name=".Vp_Activity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity android:name=".Vp_Activity" >
-
         </activity>
         <activity android:name=".login_zhuce.Login_zhuce_Activity" >
         </activity>
