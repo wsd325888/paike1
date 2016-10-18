@@ -35,7 +35,7 @@ public class fragment_remen extends Fragment {
     private Button bt;
     private ImageAdapter adapter;
     final ArrayList<PathactivityBean.Path> pathlist = new ArrayList<PathactivityBean.Path>();
-    private final String baseUrl="http://10.0.2.2:8080/webpro4/image/";
+    private final String baseUrl="http://10.40.5.24:8080/webpro4/image/";
     //用来存储我们需要用到的18个Url地址
     private List<String> urls;
     private ArrayList<String> titles=new ArrayList<>();
@@ -55,7 +55,7 @@ public class fragment_remen extends Fragment {
         System.out.println("???????????????????????");
         urls=new ArrayList<String>();
         data = new ArrayList<Product>();
-        RequestParams params = new RequestParams("http://10.0.2.2:8080/webpro4/getPath");
+        RequestParams params = new RequestParams("http://10.40.5.24:8080/webpro4/getPath");
         x.http().get(params, new Callback.CommonCallback<String>() {
             @Override
             public void onSuccess(String result) {
@@ -67,6 +67,7 @@ public class fragment_remen extends Fragment {
                     urls.add(baseUrl + pathlist.get(i).path + ".png");
                     titles.add(pathlist.get(i).descp);
                     dianzan.add(pathlist.get(i).dianzan);
+                    System.out.println(result.toString()+"/////////////////////?????");
             }
                 for(int i=0;i<urls.size();i++){
                     Product product = new Product(urls.get(i), titles.get(i),dianzan.get(i));
@@ -77,6 +78,7 @@ public class fragment_remen extends Fragment {
 
             @Override
             public void onError(Throwable ex, boolean isOnCallback) {
+                System.out.println(ex.toString()+"?<<<<<<<<<<<<<<>>>>>>>>>>>>");
             }
 
             @Override
