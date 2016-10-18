@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        left_drawer1.setAdapter(new ArrayAdapter<String>(MainActivity.this, simple_expandable_list_item_1,new String[]{"个人资料","搜索","私信","订单详情"}));
+        left_drawer1.setAdapter(new ArrayAdapter<String>(MainActivity.this, simple_expandable_list_item_1,new String[]{""}));
 
         rg_tab.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
